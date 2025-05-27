@@ -21,6 +21,11 @@ source venv/bin/activate # 실행
 
 ### 라이브러리 설치
 ```
+pip3 freeze > requirements.txt
+```
+- 신규 라이브러리 추가한 경우 requirements.txt 파일에 저장
+
+```
 pip3 install -r requirements.txt
 ```
 - 가상환경 실행 후 라이브러리 설치
@@ -32,6 +37,12 @@ OPENAI_API_KEY=sk-xxx-your-api-key
 ```
 - openapi 키 환경파일에 입력(.gitignore에 포함되어 있어 레포지토리에 올라가지않음)
 
+
+### 벡터DB 
+```
+python3 app/vector_build.py
+```
+- 테스트를 위한 파일 생성
 
 ### 서버 실행
 ```
