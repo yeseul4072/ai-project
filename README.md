@@ -40,9 +40,10 @@ OPENAI_API_KEY=sk-xxx-your-api-key
 
 ### 벡터DB 
 ```
-python3 app/vector_build.py
+python3 app/vector_build_from_excel.py
 ```
-- 테스트를 위한 파일 생성
+- 루트 폴더 아래 `screens.xlsx` 파일 생성 후 실행
+- 엑셀 파일 기준으로 데이터 벡터화하여 FAISS 저장
 
 ### 서버 실행
 ```
